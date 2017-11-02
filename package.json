@@ -1,0 +1,38 @@
+{
+  "name": "hapi-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc --check-coverage mocha ./* --timeout=10000",
+    "coverage": "istanbul cover _mocha ./*.js",
+    "start": "./node_modules/nodemon/bin/nodemon.js app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "boom": "^6.0.0",
+    "code": "^5.1.0",
+    "hapi": "^16.6.2",
+    "hapi-auth-jwt2": "^7.3.0",
+    "hapi-generator": "^1.0.1",
+    "hapi-router": "^3.5.0",
+    "hapi-swagger": "^8.0.0",
+    "inert": "^4.2.1",
+    "joi": "^13.0.1",
+    "jsonwebtoken": "^8.1.0",
+    "lab": "^15.1.1",
+    "vision": "^4.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.10.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1",
+    "nyc": "^11.3.0",
+    "standard": "^10.0.3"
+  }
+}
