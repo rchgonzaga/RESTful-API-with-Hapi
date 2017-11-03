@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "nyc --check-coverage mocha ./* --timeout=10000",
+    "test": "nyc --check-coverage mocha ./*.js --timeout=10000",
     "coverage": "istanbul cover _mocha ./*.js",
-    "start": "./node_modules/nodemon/bin/nodemon.js app.js"
+    "start": "./node_modules/nodemon/bin/nodemon.js app.js",
+    "labtest" : "lab **/*.js -a code --verbose --colors --coverage"
   },
   "keywords": [],
   "author": "",
